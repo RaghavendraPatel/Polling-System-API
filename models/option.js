@@ -20,4 +20,4 @@ const optionSchema = new mongoose.Schema(
 );
 
 const Option = mongoose.model("Option", optionSchema);
-model.exports = Option;
+module.exports = Option;

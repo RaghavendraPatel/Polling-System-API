@@ -19,4 +19,4 @@ const questionSchema = new mongoose.Schema(
 );
 
 const Qusetion = mongoose.model("Question", questionSchema);
-model.exports = Qusetion;
+module.exports = Qusetion;
