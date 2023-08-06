@@ -13,6 +13,10 @@ const optionSchema = new mongoose.Schema(
     linkToVote: {
       type: String,
     },
+    question: {
+      type: mongoose.Schema.ObjectId,
+      ref: "Question",
+    },
   },
   {
     timestamps: true,
