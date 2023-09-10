@@ -59,6 +59,8 @@ If you are running the app locally, use base url: http://localhost:8000
 
 Use base url as prefix for all the below mentioned endpoints.
 
+e.g. https://polling-api-raghavendra.onrender.com/question or http://localhost:8000/question
+
 ### Question:
 
 #### Create new Question
