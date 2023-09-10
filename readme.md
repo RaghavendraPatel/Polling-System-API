@@ -47,6 +47,8 @@ To run this project, you will need to add the following environment variables to
 
 `MONGODB = "<your mongodb connection string>"`
 
+Set API_URL to the url where the app is hosted. If you are running the app locally, set it to http://localhost:8000
+
 `API_URL = "<url where the app is hosted>" || "http://localhost:8000"`
 
 ## API Reference
