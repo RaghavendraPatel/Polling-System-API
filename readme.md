@@ -47,28 +47,34 @@ To run this project, you will need to add the following environment variables to
 
 `MONGODB = "<your mongodb connection string>"`
 
-`HOSTED_URL = "<url where the app is hosted>" || "http://localhost:8000"`
+`API_URL = "<url where the app is hosted>" || "http://localhost:8000"`
 
 ## API Reference
+
+API is hosted on render.com and can be accessed using base url: https://polling-api-raghavendra.onrender.com/
+
+If you are running the app locally, use base url: http://localhost:8000
+
+Use base url as prefix for all the below mentioned endpoints.
 
 ### Question:
 
 #### Create new Question
 
 ```http
-    POST http://localhost:8000/question/create
+    POST /question/create
 ```
 
 #### Get all Questions
 
 ```http
-  GET http://localhost:8000/question
+  GET /question
 ```
 
 #### Get Question by Id
 
 ```http
-  GET http://localhost:8000/question/${id}
+  GET /question/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -78,7 +84,7 @@ To run this project, you will need to add the following environment variables to
 #### Delete Question
 
 ```http
-  DELETE http://localhost:8000/question/delete/${id}
+  DELETE /question/delete/${id}
 ```
 
 | Parameter | Type     | Description                                  |
@@ -88,7 +94,7 @@ To run this project, you will need to add the following environment variables to
 #### Add option to Question
 
 ```http
-  POST http://localhost:8000/question/${id}/add-option
+  POST /question/${id}/add-option
 ```
 
 | Parameter | Type     | Description                                      |
@@ -100,7 +106,7 @@ To run this project, you will need to add the following environment variables to
 #### Vote option
 
 ```http
-    GET http://localhost:8000/option/add-vote/${id}
+    GET /option/add-vote/${id}
 ```
 
 | Parameter | Type     | Description                                       |
@@ -110,7 +116,7 @@ To run this project, you will need to add the following environment variables to
 #### Delete option
 
 ```http
-    DELETE http://localhost:8000/option/delete/${id}
+    DELETE /option/delete/${id}
 ```
 
 | Parameter | Type     | Description                                         |
@@ -121,15 +127,14 @@ To run this project, you will need to add the following environment variables to
 
 Clone the project
 
-```bash
-  git clone https://github.com/RaghavendraPatel/Placement-Cell.git
-```
+````bash
+  git clone https://github.com/RaghavendraPatel/Polling-System-API.git
 
 Go to the project directory
 
 ```bash
-  cd my-project
-```
+  cd Polling-System-API
+````
 
 Install dependencies
 
