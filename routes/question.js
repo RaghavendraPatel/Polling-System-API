@@ -5,10 +5,11 @@ const router = express.Router();
 const questionController = require("../controllers/questions_controllers");
 const optionController = require("../controllers/options_controller");
 
-router.post("/create", questionController.createQuestion);
+router.post("/create", questionController.create);
+router.get("/", questionController.getAllQuestions);
 router.get("/:id", questionController.getQuestion);
-router.delete("/:id/delete", questionController.deleteQuestion);
+router.delete("/delete/:id", questionController.destroy);
 
-router.post("/:id/addOption", optionController.addOption);
+router.post("/:id/add-option", questionController.addOption);
 
 module.exports = router;

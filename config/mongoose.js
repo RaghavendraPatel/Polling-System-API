@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv").config();
 
-mongoose.connect("mongodb://0.0.0.0:27017/polling");
+const url = process.env.MONGODB || "mongodb://0.0.0.0:27017/polling";
+
+mongoose.connect(url);
 
 const db = mongoose.connection;
 
