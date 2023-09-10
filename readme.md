@@ -131,14 +131,15 @@ e.g. https://polling-api-raghavendra.onrender.com/question or http://localhost:8
 
 Clone the project
 
-````bash
+```bash
   git clone https://github.com/RaghavendraPatel/Polling-System-API.git
+```
 
 Go to the project directory
 
 ```bash
   cd Polling-System-API
-````
+```
 
 Install dependencies
 
